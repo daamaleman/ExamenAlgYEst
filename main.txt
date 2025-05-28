@@ -65,6 +65,7 @@ class Citizen:
 
 # Class to manage the Municipality system
 class Municipality:
+# modifico la funcion init 
     def __init__(self):
         self.waiting_queue = Queue()
         self.citizens = {}  # Dictionary to store citizen objects
