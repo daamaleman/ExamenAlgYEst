@@ -1,3 +1,4 @@
+
 class Stack:
     def __init__(self):
         self.items = []
@@ -18,6 +19,7 @@ class Stack:
             return self.items[-1]
         return None
 
+
 class Queue:
     def __init__(self):
         self.items = []
@@ -34,4 +36,5 @@ class Queue:
         return len(self.items) == 0
     
     def display(self):
+
         return self.items
