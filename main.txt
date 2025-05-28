@@ -65,7 +65,6 @@ class Citizen:
 
 # Class to manage the Municipality system
 class Municipality:
-# modifico la funcion init 
     def __init__(self):
         self.waiting_queue = Queue()
         self.citizens = {}  # Dictionary to store citizen objects
@@ -110,7 +109,6 @@ def main():
         print("3. Display waiting queue")
         print("4. View citizen's procedure history")
         print("5. Exit")
-        print("6. View all completed procedures")
 
         
         choice = input("Select an option (1-5): ")
@@ -148,15 +146,6 @@ def main():
             print("Exiting system.")
             break
 
-        elif choice == "6":
-            print("Completed Procedures:")
-            if not municipality.completed_procedures:
-            print("No procedures completed yet.")
-            else:
-            for i, (name, proc) in enumerate(municipality.completed_procedures, 1):
-            print(f"{i}. {name} - {proc}")
-
-        
         else:
             print("Invalid option. Please try again.")
 
